@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Gouda - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">PravPortfolio</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-nav" id="closeNav">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#hero" onclick="closeMobileNav()">Home</a>
+            <a href="#skills" onclick="closeMobileNav()">Skills</a>
+            <a href="#projects" onclick="closeMobileNav()">Projects</a>
+            <a href="#contact" onclick="closeMobileNav()">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="profile-container">
+                <img src="images/profile.jpeg" alt="Alex Johnson" class="profile-img animate">
+            </div>
+            <h1 class="hero-title animate">Praveen Gouda</h1>
+            <p class="hero-subtitle animate">Frontend Developer | UI/UX Designer | Software Engineer</p>
+            <p class="description animate">
+               Passionate about building modern, responsive, and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and UI/UX design, with a focus on creating seamless digital experiences.
+            </p>
+            <div class="typewriter animate">
+                I specialize in <span id="typing-text"></span>
+            </div>
+            <div>
+                <a href="#projects" class="btn animate">View My Work</a>
+                <a href="#contact" class="btn btn-outline animate">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title animate">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card animate">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>     
+                        <li>CSS Preprocessors</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card animate">
+                    <div class="skill-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="skill-title">UI/UX Designer</h3>
+                    <ul class="skill-list">
+                        <li>User Interface Design</li>
+                        <li>User Experience Research</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Design Systems</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card animate">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-title">Software Development</h3>
+                    <ul class="skill-list">
+                        <li>MySQL Database</li>
+                        <li>API Development</li>
+                        <li>Backend Integration</li>
+                        <li>Problem Solving</li>
+                        <li>Debugging & Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title animate">My Projects</h2>
+            <div class="projects-container">
+ <div class="project-card animate">
+                    <div class="project-img">
+                       <img src="images/salon.png">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">salon booking website</h3>
+                        <p class="project-desc">A beautiful  application show Dashobord .</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                             <span class="project-tag">MySQL</span>
+                            <span class="project-tag">APIs</span>
+                                 
+                        </div>
+                        <a href="https://praveenggouda.github.io/salon-booking-frontend/" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card animate">
+
+                    <div class="project-img">
+                <img src="images/market.png">
+                   
+                    </div>
+                
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <p class="project-desc">A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                           <span class="project-tag">UI And UX</span>
+                        </div>
+                        <a href="https://praveenggouda.github.io/Market/" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate">
+                    <div class="project-img">
+                      
+                  <img src="images/hotel.png">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hotel Booking</h3>
+                        <p class="project-desc">Stay is hotel booking platform that usr can book hote; and  application with user authentication and real-time updates.</p>
+                        <div class="project-tags">
+                              <span class="project-tag">Html</Html></span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">React.js</span>
+                        </div>
+                        <a href="https://praveenggouda.github.io/stay/" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate">
+                    <div class="project-img">
+                       <img src="images/instagram.png">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">instagram Dashobord</h3>
+                        <p class="project-desc">A beautiful  application show Dashobord .</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">UI And UX</span>
+                        </div>
+                        <a href="https://praveenggouda.github.io/instagram-dahsbord/" class="btn">View Project</a>
+                    </div>
+                </div>
+<div class="project-card animate">
+                    <div class="project-img">
+                      
+                  <img src="images/youtube.png">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">youtube clone</h3>
+                        <p class="project-desc">I build a youtube clone using .</p>
+                        <div class="project-tags">
+                              <span class="project-tag">Html</Html></span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">React.js</span>
+                        </div>
+                        <a href="https://praveenggouda.github.io/youtube-clone/" class="btn">View Project</a>
+                    </div>
+                </div>
+                     
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title animate">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item animate">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>praveengouda31@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 8431878531</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Karnataka,India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group animate">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group animate">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group animate">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn animate">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Praveenggouda" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/praveen-gouda-20a359263/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/impraveengouda/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+     
+            </div>
+            <p>&copy; 2025 Praveen G Gouda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
